@@ -37,6 +37,8 @@ const authController = {
       });
     }
 
+    req.session.userId = user.id;
+
     res.render('homepage', { message: 'You are logged in!' });
   },
 };
